@@ -7,10 +7,7 @@ public static void main(String args[])throws IOException
 BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 int a,b,max,min,x,lcm=1;
 System.out.print("Enter the 1st number : ");
-a=Integer.parseInt(br.readLine());
-System.out.print("Enter the 2nd number : ");
-b=Integer.parseInt(br.readLine());
- 
+
 if(a>b)
 {
 max=a;
@@ -24,4 +21,5 @@ min=a;
 for(int i=1;i<=min;i++)
 System.out.println("L.C.M. = "+lcm)
 ;
+}
 }
