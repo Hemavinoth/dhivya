@@ -1,18 +1,27 @@
+
 import java.io.*;
-import java.util.*;
-import java.lang.*;
-class hehe
+public class mac
 {
-public static void main(String args[])
+public static void main(String args[])throws IOException
 {
-int c;
-int s=0;
-Scanner nn=new Scanner(System.in);
-n=nn.nextInt();
-for(int i=1;i<=c;i++)
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+int a,b,max,min,x,lcm=1;
+System.out.print("Enter the 1st number : ");
+a=Integer.parseInt(br.readLine());
+System.out.print("Enter the 2nd number : ");
+b=Integer.parseInt(br.readLine());
+ 
+if(a>b)
 {
-s+=i;
+max=a;
+min=b;
 }
-System.out.println(s);
+else
+{
+max=b;
+min=a;
 }
+for(int i=1;i<=min;i++)
+System.out.println("L.C.M. = "+lcm)
+;
 }
